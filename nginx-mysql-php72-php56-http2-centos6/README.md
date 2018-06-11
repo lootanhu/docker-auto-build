@@ -2,7 +2,7 @@
 Nginx/MySQL/PHP56/PHP72 with http/2 support on CentOS6
 
 
-CentOS 6：
+CentOS 6:
 
 MySQL-5.7.22
 
@@ -43,9 +43,15 @@ http://ip:port/2p.html
 how to run:
 
 Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
+
 #echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
+
 #sysctl -e -p /etc/sysctl.d/php7.conf
+
 then,
+
 #docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
+
 or
+
 #docker run -d  --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
