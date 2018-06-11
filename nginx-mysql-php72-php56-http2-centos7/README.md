@@ -5,14 +5,23 @@ MySQL/Nginx/PHP56/PHP72 with http/2 support on CentOS7
 CentOS 7：
 
 MySQL-5.7.22
+
 Nginx-1.14.0
+
 PHP-5.6.36
+
 PHP-7.2.6
+
 curl-7.59.0
+
 jemalloc-4.5.0
+
 memcached-1.5.6
+
 nghttp2-1.31.1
+
 redis-3.2.11
+
 tengine-2.2.2
 
 support HTTP2/HTTPS
