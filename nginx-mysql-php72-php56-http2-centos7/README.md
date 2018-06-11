@@ -2,7 +2,7 @@
 MySQL/Nginx/PHP56/PHP72 with http/2 support on CentOS7
 
 
-CentOS 7£º
+CentOS 7ï¼š
 
 MySQL-5.7.22
 Nginx-1.14.0
