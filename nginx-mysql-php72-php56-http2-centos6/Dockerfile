@@ -7,7 +7,7 @@ RUN rm ./install.sh
 RUN chkconfig network off
 RUN chkconfig sshd off
 RUN chkconfig xinetd off
-WORKDIR /root
 EXPOSE 80
 EXPOSE 443
+WORKDIR /root
 CMD ["/sbin/init"]
