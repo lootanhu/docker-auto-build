@@ -7,7 +7,7 @@ RUN rm ./install.sh
 RUN systemctl disable network
 RUN systemctl disable sshd
 RUN systemctl disable xinetd
-WORKDIR /root
 EXPOSE 80
 EXPOSE 443
+WORKDIR /root
 CMD ["/sbin/init"]
