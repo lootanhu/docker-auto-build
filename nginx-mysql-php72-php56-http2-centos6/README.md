@@ -30,7 +30,7 @@ tengine-2.2.2
 support HTTP2/HTTPS
 
 Notes: 
-1. all rpm packages are compiled by gcc 4.8.5.
+1. All rpm packages are compiled by gcc 4.8.5.
 2. MySQL/tengine's preset is not running. 
 
 -----------------
