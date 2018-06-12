@@ -6,6 +6,7 @@ RUN ["./install.sh", "php72", "php56", "nocleanyum"]
 RUN rm ./install.sh
 RUN systemctl disable network
 RUN systemctl disable sshd
+RUN systemctl disable systemd-logind
 RUN systemctl disable xinetd
 EXPOSE 80
 EXPOSE 443
