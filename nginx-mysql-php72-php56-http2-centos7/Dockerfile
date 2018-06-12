@@ -7,7 +7,6 @@ RUN rm ./install.sh
 RUN systemctl disable getty@tty1
 RUN systemctl disable network
 RUN systemctl disable sshd
-RUN systemctl disable systemd-logind
 RUN systemctl disable xinetd
 EXPOSE 80
 EXPOSE 443
