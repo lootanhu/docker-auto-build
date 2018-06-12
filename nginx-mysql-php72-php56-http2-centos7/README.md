@@ -54,6 +54,7 @@ or
 
 #docker run -d  --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
 
+-----------------
 
 For exmaple:
 
