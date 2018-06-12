@@ -53,3 +53,13 @@ then,
 or
 
 #docker run -d  --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
+
+
+For exmaple:
+[root@localhost CentOS7]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
+[  OK  ] Started The nginx HTTP and reverse proxy server.
+[  OK  ] Started The PHP FastCGI Process Manager.
+[  OK  ] Started The PHP5 FastCGI Process Manager.
+[  OK  ] Reached target Multi-User System.
+　　　Starting Update UTMP about System Runlevel Changes...
+[  OK  ] Started Update UTMP about System Runlevel Changes.
