@@ -83,3 +83,7 @@ vm.nr_hugepages_mempolicy = 512
 　　　Starting Update UTMP about System Runlevel Changes...
    
 [  OK  ] Started Update UTMP about System Runlevel Changes.
+
+[root@localhost CentOS6]#
+
+[root@localhost CentOS6]# w3m http://localhost:8080/2p.html
