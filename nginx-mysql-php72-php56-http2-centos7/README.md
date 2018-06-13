@@ -14,6 +14,8 @@ PHP-7.2.6
 
 curl-7.59.0
 
+httpd-2.4.33
+
 jemalloc-4.5.0
 
 memcached-1.5.6
@@ -29,7 +31,10 @@ tengine-2.2.2
 support HTTP2/HTTPS
 
 Notes: 
-1. MySQL/tengine's preset is not running.
+
+1. All above software are installed by using yum as rpm packages. 
+
+2. The preset of httpd/MySQL/tengine is not running. 
 
 -----------------
 
@@ -71,3 +76,8 @@ For exmaple:
 　　　Starting Update UTMP about System Runlevel Changes...
    
 [  OK  ] Started Update UTMP about System Runlevel Changes.
+
+
+[root@localhost ~]#
+
+[root@localhost ~]# w3m http://localhost:8080/2p.html
