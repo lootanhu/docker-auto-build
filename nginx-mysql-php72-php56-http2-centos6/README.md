@@ -30,8 +30,8 @@ tengine-2.2.2
 support HTTP2/HTTPS
 
 Notes: 
-1. All rpm packages are compiled by gcc 4.8.5.
-2. MySQL/tengine's preset is not running. 
+1. All above software are installed by using yum as rpm packages compiled with gcc 4.8.5. 
+2. The httpd/MySQL/tengine's preset is not running. 
 
 -----------------
 
@@ -59,6 +59,16 @@ or
 -----------------
 
 For exmaple:
+
+[root@localhost CentOS6]# cat /etc/sysctl.d/php7.conf
+
+vm.nr_hugepages = 512
+
+[root@localhost CentOS6]# sysctl -a 2>/dev/null | grep vm.nr_hugepages
+
+vm.nr_hugepages = 512
+
+vm.nr_hugepages_mempolicy = 512
 
 [root@localhost CentOS6]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /usr/sbin/init
 
