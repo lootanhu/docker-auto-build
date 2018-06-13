@@ -5,7 +5,7 @@ RUN curl -k -s -R https://monitor.bolaninfo.com/bolanrepo/scripts/install.sh -o 
 RUN ["./install.sh", "php72", "php56"]
 RUN rm ./install.sh
 RUN chkconfig network off	|| :
-RUN chkconfig sshd off	|| :
+RUN chkconfig sshd off		|| :
 RUN chkconfig xinetd off	|| :
 EXPOSE 80
 EXPOSE 443
