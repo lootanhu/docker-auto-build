@@ -34,7 +34,7 @@ Notes:
 
 1. All above software are installed by using yum as rpm packages. 
 
-2. The preset of httpd/MySQL/tengine is not running. 
+2. The preset of httpd/MySQL/tengine is disable running. 
 
 -----------------
 
