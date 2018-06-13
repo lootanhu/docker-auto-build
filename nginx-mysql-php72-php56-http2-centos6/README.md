@@ -33,7 +33,7 @@ support HTTP2/HTTPS
 
 Notes: 
 1. All above software are installed by using yum as rpm packages compiled with gcc 4.8.5. 
-2. The httpd/MySQL/tengine's preset is not running. 
+2. The httpd/MySQL/tengine's preset is disable running. 
 
 -----------------
 
