@@ -78,6 +78,8 @@ For exmaple:
 [  OK  ] Started Update UTMP about System Runlevel Changes.
 
 
+then,
+
 [root@localhost ~]#
 
 [root@localhost ~]# w3m http://localhost:8080/2p.html
