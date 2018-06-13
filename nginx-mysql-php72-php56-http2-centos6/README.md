@@ -14,6 +14,8 @@ PHP-7.2.6
 
 curl-7.59.0
 
+httpd-2.4.33
+
 jemalloc-4.5.0
 
 memcached-1.5.6
