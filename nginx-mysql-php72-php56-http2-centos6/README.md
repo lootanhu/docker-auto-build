@@ -24,7 +24,7 @@ nghttp2-1.31.1
 
 openssl-1.0.2k
 
-redis-3.2.11
+redis-4.0.10
 
 tengine-2.2.2
 
