@@ -72,19 +72,8 @@ vm.nr_hugepages = 512
 
 vm.nr_hugepages_mempolicy = 512
 
-[root@localhost CentOS6]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /usr/sbin/init
-
-[  OK  ] Started The nginx HTTP and reverse proxy server.
-
-[  OK  ] Started The PHP FastCGI Process Manager.
-
-[  OK  ] Started The PHP5 FastCGI Process Manager.
-
-[  OK  ] Reached target Multi-User System.
-
-　　　Starting Update UTMP about System Runlevel Changes...
-   
-[  OK  ] Started Update UTMP about System Runlevel Changes.
+[root@localhost CentOS6]# docker run -d --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6
+a3bcf5e2b21a6f3c50e7ce8060958d4be93e96cfb2c1baaddbe421dce2e4f2b5
 
 [root@localhost CentOS6]#
 
