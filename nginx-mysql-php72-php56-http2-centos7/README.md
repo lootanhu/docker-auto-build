@@ -33,7 +33,6 @@ support HTTP2/HTTPS
 Notes: 
 
 1. All above software are installed by using yum as rpm packages. 
-
 2. The preset of httpd/MySQL/tengine is disable running. 
 
 -----------------
@@ -74,7 +73,7 @@ For exmaple:
 [  OK  ] Reached target Multi-User System.
 
 　　　Starting Update UTMP about System Runlevel Changes...
-   
+
 [  OK  ] Started Update UTMP about System Runlevel Changes.
 
 
