@@ -1,13 +1,11 @@
-# nginx-mysql-php72-php56-http2-centos7
-Nginx/MySQL/PHP72/PHP56 with http/2 support on CentOS7
-
+# Nginx/MySQL/PHP72/PHP56 with HTTP/2 support on CentOS7
 
 CentOS 7：
 
-MySQL-5.7.22
-Nginx-1.14.0
-PHP-5.6.36
-PHP-7.2.6
+mysql-5.7.22
+nginx-1.14.0
+php-5.6.36
+php-7.2.6
 curl-7.59.0
 httpd-2.4.33
 jemalloc-4.5.0
