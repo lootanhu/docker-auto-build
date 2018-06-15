@@ -35,9 +35,7 @@ http://ip:port/2p.html
 How to run:
 
 Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
-
 [root@localhost CentOS7]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
-
 [root@localhost CentOS7]# sysctl -e -p /etc/sysctl.d/php7.conf
 
 then,
@@ -53,22 +51,15 @@ or
 For exmaple:
 
 [root@localhost CentOS7]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
-
 [  OK  ] Started The nginx HTTP and reverse proxy server.
-
 [  OK  ] Started The PHP FastCGI Process Manager.
-
 [  OK  ] Started The PHP5 FastCGI Process Manager.
-
 [  OK  ] Reached target Multi-User System.
-
 　　　Starting Update UTMP about System Runlevel Changes...
-
 [  OK  ] Started Update UTMP about System Runlevel Changes.
 
 
 then,
 
 [root@localhost ~]#
-
 [root@localhost ~]# w3m http://localhost:8080/2p.html
