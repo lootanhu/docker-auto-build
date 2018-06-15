@@ -1,5 +1,5 @@
 # nginx-mysql-php72-php56-http2-centos7
-Nginx/MySQL/PHP56/PHP72 with http/2 support on CentOS7
+Nginx/MySQL/PHP72/PHP56 with http/2 support on CentOS7
 
 
 CentOS 7：
