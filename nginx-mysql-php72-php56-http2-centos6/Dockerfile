@@ -7,7 +7,7 @@ RUN rm ./install.sh
 RUN chkconfig network off	|| :
 RUN chkconfig sshd off		|| :
 RUN chkconfig xinetd off	|| :
-RUN grep -sq "/docker/" /proc/1/cgroup && test -f /etc/init/tty.conf && mv /etc/init/tty.conf /etc/init/tty.conf.BAK	|| :
+RUN grep -sq "/docker/" /proc/1/cgroup && test -f /etc/init/start-ttys.conf && mv /etc/init/start-ttys.conf /etc/init/start-ttys.conf.BAK	|| :
 EXPOSE 80
 EXPOSE 443
 WORKDIR /root
