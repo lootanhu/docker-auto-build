@@ -29,6 +29,7 @@ redis-3.2.11
 tengine-2.2.2
 
 -----------------
+
 support HTTP2/HTTPS
 
 Notes: 
@@ -42,21 +43,21 @@ http://ip:port/2p.html
 
 -----------------
 
-how to run:
+How to run:
 
 Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
 
-#echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
+[root@localhost CentOS6]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
 
-#sysctl -e -p /etc/sysctl.d/php7.conf
+[root@localhost CentOS6]# sysctl -e -p /etc/sysctl.d/php7.conf
 
 then,
 
-#docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
+[root@localhost CentOS6]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
 
 or
 
-#docker run -d  --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
+[root@localhost CentOS6]# docker run -d  --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6 /sbin/init
 
 -----------------
 
@@ -73,7 +74,9 @@ vm.nr_hugepages = 512
 vm.nr_hugepages_mempolicy = 512
 
 [root@localhost CentOS6]# docker run -d --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6
+
 a3bcf5e2b21a6f3c50e7ce8060958d4be93e96cfb2c1baaddbe421dce2e4f2b5
+
 
 [root@localhost CentOS6]#
 
