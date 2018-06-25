@@ -9,6 +9,7 @@ httpd-2.4.33
 jemalloc-4.5.0
 memcached-1.5.6
 nghttp2-1.31.1
+openssl-1.0.2o
 redis-4.0.10
 tengine-2.2.2
 
