@@ -36,7 +36,9 @@ Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST 
 [root@localhost CentOS7]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
 [root@localhost CentOS7]# sysctl -e -p /etc/sysctl.d/php7.conf
 
-then,
+or change "opcache.huge_code_pages=1" to "opcache.huge_code_pages=0" in /etc/php.ini of the docker container.
+
+Then,
 
 [root@localhost CentOS7]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
 
