@@ -1,7 +1,7 @@
 FROM centos
 MAINTAINER lootan@qq.com
 WORKDIR /tmp
-RUN curl -k -s -R -O https://monitor.bolaninfo.com/bolanrepo/scripts/install.sh && chmod u+x install.sh
+RUN curl -k -s -R -O https://monitor.bolaninfo.com/lootanrepo/scripts/install.sh && chmod u+x install.sh
 RUN ["./install.sh", "php72", "php56"]
 RUN rm ./install.sh
 RUN systemctl disable getty@tty1	|| :
