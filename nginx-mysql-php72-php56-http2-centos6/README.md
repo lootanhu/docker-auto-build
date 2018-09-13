@@ -4,13 +4,13 @@ mysql-5.7.23
 nginx-1.14.0
 php-5.6.37
 php-7.2.9
-curl-7.61.0
+curl-7.61.1
 httpd-2.4.34
 jemalloc-4.5.0
 memcached-1.5.9
-nghttp2-1.31.1
+nghttp2-1.33.0
 openssl-1.0.2o
-redis-4.0.10
+redis-4.0.11
 tengine-2.2.2
 
 -----------------
