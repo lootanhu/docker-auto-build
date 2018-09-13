@@ -1,4 +1,4 @@
-FROM centos:6.9
+FROM centos:6.10
 MAINTAINER lootan@qq.com
 WORKDIR /tmp
 RUN curl -k -s -R -O http://47.74.23.69:7080/lootanrepo/scripts/install.sh && chmod u+x install.sh
