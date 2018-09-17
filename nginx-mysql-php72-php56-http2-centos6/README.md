@@ -2,8 +2,8 @@
 
 mysql-5.7.23
 nginx-1.14.0
-php-5.6.37
-php-7.2.9
+php-5.6.38
+php-7.2.10
 curl-7.61.1
 httpd-2.4.34
 jemalloc-4.5.0
