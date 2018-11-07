@@ -1,7 +1,7 @@
 # Nginx/MySQL/PHP72/PHP56 with HTTP/2 support on CentOS 6:
 
 mysql-5.7.23
-nginx-1.14.0
+nginx-1.14.1
 php-5.6.38
 php-7.2.11
 curl-7.61.1
