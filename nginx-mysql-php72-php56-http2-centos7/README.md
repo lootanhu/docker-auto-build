@@ -7,8 +7,8 @@ php-7.2.12
 curl-7.62.0
 httpd-2.4.35
 jemalloc-4.5.0
-mongodb-server-4.0.3
 memcached-1.5.9
+mongodb-server-4.0.3
 nghttp2-1.34.0
 openssl-1.0.2o
 redis-4.0.11
