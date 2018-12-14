@@ -1,17 +1,29 @@
 # Nginx/MySQL/PHP72/PHP56 with HTTP/2 support on CentOS 7:
 
 mysql-5.7.24
+
 nginx-1.14.2
+
 php-5.6.39
+
 php-7.2.13
+
 curl-7.63.0
+
 httpd-2.4.35
+
 jemalloc-4.5.0
+
 memcached-1.5.9
+
 mongodb-server-4.0.3
+
 nghttp2-1.34.0
+
 openssl-1.0.2o
+
 redis-4.0.11
+
 tengine-2.2.2
 
 -----------------
@@ -25,7 +37,8 @@ Notes:
 
 -----------------
 
-For the phpinfo of php72 and php56, to brower the url :
+For the phpinfo of php72 and php56, to brower the url:
+
 http://ip:port/2p.html
 
 -----------------
@@ -35,6 +48,7 @@ How to run:
 Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
 
 [root@localhost CentOS7]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
+
 [root@localhost CentOS7]# sysctl -e -p /etc/sysctl.d/php7.conf
 
 or change "opcache.huge_code_pages=1" to "opcache.huge_code_pages=0" in /etc/php.ini of the docker container.
@@ -52,15 +66,23 @@ or
 For exmaple:
 
 [root@localhost CentOS7]# docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos7 /usr/sbin/init
+
 [  OK  ] Started The nginx HTTP and reverse proxy server.
+
 [  OK  ] Started The PHP FastCGI Process Manager.
+
 [  OK  ] Started The PHP5 FastCGI Process Manager.
+
 [  OK  ] Reached target Multi-User System.
+
 　　　Starting Update UTMP about System Runlevel Changes...
+   
 [  OK  ] Started Update UTMP about System Runlevel Changes.
+
 
 
 Then,
 
 [root@localhost ~]#
+
 [root@localhost ~]# w3m http://localhost:8080/2p.html
