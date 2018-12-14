@@ -1,18 +1,31 @@
 # Nginx/MySQL/PHP72/PHP56 with HTTP/2 support on CentOS 6:
 
 mysql-5.7.24
+
 nginx-1.14.2
+
 php-5.6.39
+
 php-7.2.13
+
 curl-7.63.0
+
 httpd-2.4.35
+
 jemalloc-4.5.0
+
 memcached-1.5.9
+
 mongodb-server-4.0.3
+
 nghttp2-1.34.0
+
 openssl-1.0.2o
+
 redis-4.0.11
+
 tengine-2.2.2
+
 
 -----------------
 
@@ -25,6 +38,7 @@ Notes:
 -----------------
 
 For the phpinfo of php72 and php56, to brower the url :
+
 http://ip:port/2p.html
 
 -----------------
@@ -34,6 +48,7 @@ How to run:
 Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
 
 [root@localhost CentOS6]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
+
 [root@localhost CentOS6]# sysctl -e -p /etc/sysctl.d/php7.conf
 
 or change "opcache.huge_code_pages=1" to "opcache.huge_code_pages=0" in /etc/php.ini of the docker container.
@@ -51,13 +66,19 @@ or
 For exmaple:
 
 [root@localhost CentOS6]# cat /etc/sysctl.d/php7.conf
+
 vm.nr_hugepages = 512
+
 [root@localhost CentOS6]# sysctl -a 2>/dev/null | grep vm.nr_hugepages
+
 vm.nr_hugepages = 512
+
 vm.nr_hugepages_mempolicy = 512
+
 
 [root@localhost CentOS6]# docker run -d --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 lootan/nginx-mysql-php72-php56-http2-centos6
 a3bcf5e2b21a6f3c50e7ce8060958d4be93e96cfb2c1baaddbe421dce2e4f2b5
 
 [root@localhost CentOS6]#
+
 [root@localhost CentOS6]# w3m http://localhost:8080/2p.html
