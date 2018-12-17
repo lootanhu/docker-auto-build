@@ -18,7 +18,7 @@ memcached-1.5.9
 
 mongodb-4.0.3
 
-nghttp2-1.34.0
+nghttp2-1.35.1
 
 openssl-1.0.2o
 
