@@ -16,7 +16,7 @@ jemalloc-4.5.0
 
 memcached-1.5.9
 
-mongodb-server-4.0.3
+mongodb-4.0.3
 
 nghttp2-1.34.0
 
