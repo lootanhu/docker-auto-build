@@ -10,7 +10,7 @@ php-7.2.17
 
 curl-7.64.1
 
-httpd-2.4.38
+httpd-2.4.39
 
 jemalloc-4.5.0
 
