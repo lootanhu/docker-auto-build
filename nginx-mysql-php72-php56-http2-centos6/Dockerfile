@@ -1,5 +1,5 @@
 FROM centos:6.10
-MAINTAINER Lootan <lootan@qq.com>
+MAINTAINER LootanHu <lootan@qq.com>
 WORKDIR /tmp
 RUN curl -k -s -R -O https://www.moreface.com.cn/lootanrepo/scripts/install.sh && chmod u+x install.sh
 RUN ./install.sh php72 php56
