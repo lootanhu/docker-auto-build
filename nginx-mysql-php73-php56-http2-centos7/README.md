@@ -6,7 +6,7 @@ nginx-1.16.0
 
 php-5.6.40
 
-php-7.2.18
+php-7.3.5
 
 curl-7.64.1
 
@@ -75,7 +75,7 @@ For exmaple:
 
 [  OK  ] Reached target Multi-User System.
 
-¡¡¡¡¡¡Starting Update UTMP about System Runlevel Changes...
+Â¡Â¡Â¡Â¡Â¡Â¡Starting Update UTMP about System Runlevel Changes...
    
 [  OK  ] Started Update UTMP about System Runlevel Changes.
 
