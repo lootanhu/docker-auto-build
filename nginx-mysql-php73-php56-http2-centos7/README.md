@@ -14,7 +14,7 @@ httpd-2.4.39
 
 jemalloc-4.5.0
 
-memcached-1.5.13
+memcached-1.5.16
 
 mongodb-4.0.3
 
