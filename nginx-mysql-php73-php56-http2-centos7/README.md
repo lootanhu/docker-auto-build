@@ -10,13 +10,13 @@ php-7.3.8
 
 curl-7.65.3
 
-httpd-2.4.39
+httpd-2.4.41
 
 jemalloc-4.5.0
 
 memcached-1.5.16
 
-mongodb-4.0.11
+mongodb-4.2.0
 
 nghttp2-1.39.1
 
