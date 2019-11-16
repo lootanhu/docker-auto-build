@@ -32,7 +32,7 @@ tengine-2.3.1
 support HTTP2/HTTPS
 
 Notes: 
-1. All above software are installed by using yum as rpm packages compiled with gcc 4.8.5. 
+1. Some above software are installed by using yum as rpm packages compiled with gcc 4.8.5. 
 2. The httpd/MySQL/tengine's preset is disable running. 
 
 -----------------
