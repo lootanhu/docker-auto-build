@@ -45,13 +45,13 @@ http://ip:port/2p.html
 
 How to run:
 
-Because "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
+If "opcache.huge_code_pages = 1" is in php7's php.ini, MUST DO on the HOST of docker:
 
 [root@localhost CentOS7]# echo "vm.nr_hugepages = 512" >> /etc/sysctl.d/php7.conf
 
 [root@localhost CentOS7]# sysctl -e -p /etc/sysctl.d/php7.conf
 
-or change "opcache.huge_code_pages=1" to "opcache.huge_code_pages=0" in /etc/php.ini of the docker container.
+Or change "opcache.huge_code_pages=1" to "opcache.huge_code_pages=0" in /etc/php.ini of the docker container.
 
 Then,
 
