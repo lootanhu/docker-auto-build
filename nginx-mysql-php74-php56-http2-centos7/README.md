@@ -75,7 +75,7 @@ For exmaple:
 
 [  OK  ] Reached target Multi-User System.
 
-¡¡¡¡¡¡Starting Update UTMP about System Runlevel Changes...
+[  OK  ] Starting Update UTMP about System Runlevel Changes...
    
 [  OK  ] Started Update UTMP about System Runlevel Changes.
 
