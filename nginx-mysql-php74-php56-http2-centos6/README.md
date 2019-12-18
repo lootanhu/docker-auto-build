@@ -24,7 +24,7 @@ openssl-1.0.2o
 
 redis-5.0.6
 
-tengine-2.3.1
+tengine-2.3.2
 
 
 -----------------
