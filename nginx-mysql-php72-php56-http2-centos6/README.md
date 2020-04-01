@@ -22,7 +22,7 @@ nghttp2-1.40.0
 
 openssl-1.0.2o
 
-redis-5.0.7
+redis-5.0.8
 
 tengine-2.3.2
 
